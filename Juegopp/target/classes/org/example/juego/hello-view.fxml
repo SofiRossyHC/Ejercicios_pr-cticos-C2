@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.juego.HelloController">
+    <children>
+        <Pane layoutX="9.0" layoutY="10.0" prefHeight="84.0" prefWidth="876.0" style="-fx-background-color: #98FB98;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="EVALUACIÓN UNIDAD 2">
+                    <font>
+                        <Font name="GeoSlab703 Md BT Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="53.0" text="NOMBRE DEL ESTUDIANTE:">
+                    <font>
+                        <Font name="Gill Sans MT" size="14.0" />
+                    </font>
+                </Label>
+            <Label layoutX="195.0" layoutY="51.0" prefHeight="20.0" prefWidth="173.0" text="Diana Vanessa Huanca Cruz">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="9.0" layoutY="99.0" prefHeight="341.0" prefWidth="257.0" style="-fx-background-color: #FFE4E1;">
+            <children>
+                <Pane layoutX="-6.0" layoutY="1.0" prefHeight="199.0" prefWidth="260.0">
+                    <children>
+                        <GridPane fx:id="tablaplay" layoutX="37.0" layoutY="14.0" prefHeight="186.0" prefWidth="187.0" style="-fx-border-radius: black;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                <Button fx:id="btn2" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="shaw" GridPane.columnIndex="1" />
+                                <Button fx:id="btn3" layoutX="63.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Button>
+                                <Button fx:id="btn5" layoutX="63.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Button fx:id="btn4" layoutX="10.0" layoutY="59.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                <Button fx:id="btn7" layoutX="10.0" layoutY="59.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="2" />
+                                <Button fx:id="btn8" layoutX="10.0" layoutY="108.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Button fx:id="btn9" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button fx:id="btn6" layoutX="134.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </Pane>
+                <Label layoutX="53.0" layoutY="214.0" text="TURNO:">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="31.0" fitWidth="93.0" layoutX="124.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="nombreturno" layoutX="143.0" layoutY="219.0" />
+                <Label layoutX="45.0" layoutY="250.0" text="Jugador 1:">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="275.0" text="Jugador 2:">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="punt_jugador1" layoutX="115.0" layoutY="250.0" text="0" />
+                <Label fx:id="punt_jugador2" layoutX="115.0" layoutY="275.0" text="0" />
+            </children>
+        </Pane>
+        <Pane layoutX="275.0" layoutY="99.0" prefHeight="341.0" prefWidth="610.0" style="-fx-background-color: #7FFFD4;">
+            <children>
+                <Pane layoutX="11.0" layoutY="112.0" prefHeight="223.0" prefWidth="589.0" style="-fx-background-color: #FFE4E1;">
+                    <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="TABLA DE PUNTAJES">
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <HBox layoutX="12.0" layoutY="139.0" prefHeight="186.0" prefWidth="569.0">
+                    <children>
+                        <TableView fx:id="tabla_puntajes" prefHeight="186.0" prefWidth="578.0" translateX="9.0">
+                            <columns>
+                                <TableColumn fx:id="nom_partido" prefWidth="98.0" text="Nombre Partido" />
+                                <TableColumn fx:id="nom_jugador1" prefWidth="115.0" text="Nombre Jugador 1" />
+                                <TableColumn fx:id="nom_jugador2" prefWidth="111.0" text="Nombre Jugador 2" />
+                                <TableColumn fx:id="nom_ganador" minWidth="0.0" prefWidth="103.0" text="Nombre Ganador" />
+                                <TableColumn fx:id="puntuacion" minWidth="0.0" prefWidth="71.0" text="Puntuación" />
+                                <TableColumn fx:id="cestado" prefWidth="70.0" text="Estado" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </HBox>
+                <Button fx:id="btniniciar" layoutX="25.0" layoutY="74.0" mnemonicParsing="false" onAction="#iniciarJuego" prefHeight="27.0" prefWidth="62.0" text="INICIAR" />
+                <Button fx:id="btnanular" layoutX="100.0" layoutY="73.0" mnemonicParsing="false" onAction="#anularJuego" prefHeight="27.0" prefWidth="62.0" text="ANULAR" />
+                <Label layoutX="25.0" layoutY="15.0" text="Nombre jugador 1:">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="25.0" layoutY="45.0" text="Nombre jugador 2:">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nombrejugador1" layoutX="162.0" layoutY="12.0" prefHeight="25.0" prefWidth="324.0" />
+                <TextField fx:id="nombrejugador2" layoutX="162.0" layoutY="42.0" prefHeight="25.0" prefWidth="324.0" />
+            <Button layoutX="182.0" layoutY="75.0" mnemonicParsing="false"  text="Button" />
+            </children>
+            <rotationAxis>
+                <Point3D z="9.0" />
+            </rotationAxis>
+        </Pane>
+    </children>
+</AnchorPane>
